@@ -35,5 +35,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "A simple web app that enter information of the places one will like to visit.",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angeluz100/React-project-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Angeluz100/React-project-3/issues"
+  },
+  "homepage": "https://github.com/Angeluz100/React-project-3#readme"
 }
