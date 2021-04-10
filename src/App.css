@@ -1,4 +1,4 @@
-/* * {
+* {
   box-sizing: border-box;
 }
   
@@ -7,9 +7,10 @@ body {
   margin: 0;
 }
 #root {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
 }
 header {
   display: flex;
@@ -17,7 +18,7 @@ header {
   align-items: center;
   height: 3rem;
   padding-left: 1rem;
-  background-color: #737495;
+  background-color: red;
   box-shadow: 3px 3px 3px 3px #808080;
   color: #ffffff;
 }
@@ -29,16 +30,16 @@ header > ul {
 header > ul li {
   margin-right: 10px;
 }
-.auth-link:hover {
+header > ul li {
   cursor: pointer;
 }
 header > ul img {
   height: 2.5rem;
   border-radius: 50%;
 }
+
 main {
   flex-grow: 1;
-  min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +51,7 @@ section > article {
   min-width: 15rem;
   color: white;
   margin: 0.1rem;
-  background-color: #737495;
+  background-color: black;
 }
   
 article > div {
@@ -58,15 +59,16 @@ article > div {
 }
   
 article > div:nth-child(2) {
-  width: 2rem;
-  background-color: #f17d80;
+  width: 10rem;
+  background-color: red;
   text-align: center;
 }
   
 label {
-  display: flex;
-  align-items: center;
-  margin-top: 0.5rem;
+  color:rgb(202, 112, 9);
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
 }
   
 label span {
@@ -74,9 +76,8 @@ label span {
   width: 4.5rem;
 }
   
-input,
-select {
-  width: 100%;
+input, textarea, button {
+  width: 11rem;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: bold;
@@ -103,5 +104,5 @@ button {
 button:hover {
   color: white;
   background-color: #737495;
-} */
+}
 

@@ -1,7 +1,7 @@
 import { login, logout } from '../../services/firebase';
 const Header = (props) => (
     <header>
-        <h1>Dream Places to visit</h1>
+        <h1>Dream Places</h1>
         <ul>
             {
                 props.user ?

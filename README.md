@@ -4,7 +4,7 @@ A simple web app that enter information of the places one will like to visit.
 
 ## technologies Used
 - Invision (wireframe)
-- lucy.app (ERD)
+- lucid.app (ERD)
 - Trello Board (https://trello.com/b/GAhArwda/project-3)
 - HTML5
 - CSS3
