@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ header {
   height: 3rem;
   padding-left: 1rem;
   background-color: red;
-  box-shadow: 3px 3px 3px 3px #808080;
+  box-shadow: 1px 1px 5px 3px #808080;
   color: #ffffff;
 }
 header > ul {
@@ -30,22 +32,71 @@ header > ul {
 header > ul li {
   margin-right: 10px;
 }
-header > ul li {
+.auth-link:hover {
   cursor: pointer;
 }
 header > ul img {
-  height: 2.5rem;
+  height: 2rem;
   border-radius: 50%;
 }
-
-main {
-  flex-grow: 1;
+.card-container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+ 
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 20vh;
+  border-radius: 3%;
+  background-color: powderblue;
+  margin: 1em;
+  
+}
+.card article {
+  /* overflow: scroll; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.card article > div:first-child {
+  overflow-wrap: break-word;
+  
+  ;
+}
+.card article > div:last-child{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.edit, .delete:hover {
+  cursor: pointer;
+}
+.delete{
+  padding-right: 10px;
+  
+}
+.edit {
+  padding-left: 5px;
+}
+.comments {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 40%;
 }
   
-section > article {
+
+
+/* main {
+   flex-grow: 1; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+/* }  */
+  
+/* section > article {
   display: flex;
   justify-content: space-between;
   min-width: 15rem;
@@ -55,25 +106,51 @@ section > article {
 }
   
 article > div {
+  display: flex;
+  align-items: center;
   padding: 0.5rem;
+}
+article > div:nth-child(1) {
+  flex-grow: 1;
+  
 }
   
 article > div:nth-child(2) {
   width: 10rem;
   background-color: red;
-  text-align: center;
+  justify-content: center;
 }
+article > div:nth-child(3) {
+  width: 2rem;
+  background-color: black;
+  
+}
+article > div:nth-child(4) {
+  width: 2rem;
+  background-color: orangered;
+  
+}
+
+article > div:nth-child(3),
+article > div:nth-child(4):hover {
+  cursor: pointer;
+  /* box-shadow: 1px 1px 2px 2px #808080; */
+ /* }  */
   
 label {
-  color:rgb(202, 112, 9);
+  color: powderblue;
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 1rem;
 }
-  
+
 label span {
-  color: #737495;
+  color: darkblue;
   width: 4.5rem;
+  resize: none;
+}
+span {
+/* margin-left: 60%; */
 }
   
 input, textarea, button {
@@ -82,8 +159,8 @@ input, textarea, button {
   font-size: 1rem;
   font-weight: bold;
   padding: 0.4rem;
-  color: #f17d80;
-  border: 2px solid #737495;
+  color: black;
+  border: 2px solid darkblue;
   border-radius: 0;
   outline: none;
   -webkit-appearance: none;
@@ -93,9 +170,9 @@ button {
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  margin: 0.5rem 0 0 auto;
+  margin: 0.5rem 21.7rem 0 auto;
   padding: 0.4rem;
-  background-color: #f17d80;
+  background-color: red;
   color: white;
   border: none;
   outline: none;
@@ -103,6 +180,6 @@ button {
   
 button:hover {
   color: white;
-  background-color: #737495;
-}
+  background-color: powderblue;
+} 
 
