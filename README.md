@@ -29,5 +29,9 @@ A simple web app that enter information of the places one will like to visit.
 [click]() here to get started and see the app online! 
 
 ## Future Enhancements
+- Make the links clickable
+- Submit more information 
+- GPS location
+
 
 

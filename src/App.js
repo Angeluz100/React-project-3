@@ -10,7 +10,8 @@ export default function App() {
     places: [],
     newPlace:{
     place: "",
-    comments: ""
+    comments: "",
+    picture: ""
     },
     editMode: false
   });
@@ -64,7 +65,8 @@ export default function App() {
         places,
         newPlace:{
           place: "",
-          comments: ""
+          comments: "",
+          picture: ""
         },
       }))
     } else {
@@ -82,7 +84,8 @@ export default function App() {
         places,
         newPlace: {
           place: "",
-          comments: ""    
+          comments: "",
+          picture: ""   
         },
         editMode: false
       }))
@@ -104,7 +107,8 @@ export default function App() {
       ...prevState,
       newPlace: {
         place: "",
-        comments: ""
+        comments: "",
+        picture: ""
       },
       editMode: false
     }))
@@ -122,14 +126,18 @@ export default function App() {
         state.user &&
         <>
       <hr />
-      <form onSubmit={handleSubmit}>
-        <label>
+      <form className="main-container"onSubmit={handleSubmit}>
+        <label className="main-card">
           <span>Place</span>
           <input name="place" value={state.newPlace.place} onChange={handleChange}/>
         </label>
         <label>
           <span>Comments</span>
           <textarea name="comments" value={state.newPlace.comments} onChange={handleChange}></textarea> 
+        </label>
+        <label>
+          <span>Picture</span>
+          <input name="picture" value={state.newPlace.picture} onChange={handleChange}/>
         </label>
         <button>{state.editMode ? 'Edit Place' : 'Enter New Place'}</button>
       </form>
@@ -138,6 +146,6 @@ export default function App() {
       }
     </section>
       </main>
-    </>
-  );
+      </>
+      );
 }
