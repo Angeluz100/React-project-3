@@ -12,7 +12,8 @@ A simple web app that enter information of the places one will like to visit.
 - Express
 - MongoDB 
 - Github Pages (for saving)
-- Heroku Pages (for deployment)
+- Heroku Pages (backend deployment)
+- Netlify Pages (frontend deployment)
 - React
 - Firebase
 
@@ -26,7 +27,7 @@ A simple web app that enter information of the places one will like to visit.
 ![final Result](./public/imgs/final-touch.png)
 
 ## Getting started
-[click]() here to get started and see the app online! 
+[click](https://react-dream-places.netlify.app/) 
 
 ## Future Enhancements
 - Make the links clickable

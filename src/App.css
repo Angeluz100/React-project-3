@@ -45,6 +45,7 @@ header > ul img {
   flex-wrap: wrap;
 }
 .card {
+  background-image: url('https://images.unsplash.com/photo-1599799121989-b732b15d1dd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -52,7 +53,7 @@ header > ul img {
   width: 15%;
   height: 20vh;
   border-radius: 3%;
-  background-color: powderblue;
+  /* background-color: powderblue; */
   margin: 1em;
 }
 .card article {
