@@ -20,7 +20,7 @@ export default function App() {
       if(!state.user) return;
       try {
   
-        const BASE_URL = `http://localhost:3001/api/places?uid=${state.user.uid}`;//change this for the second page
+        const BASE_URL = `https://react-project3.herokuapp.com/api/places?uid=${state.user.uid}`;//change this for the second page
         const places = await fetch(BASE_URL).then(res => res.json());
         setState((prevState) => ({
           ...prevState,
@@ -31,7 +31,7 @@ export default function App() {
       }
     }
     getAppData();
-    auth.onAuthStateChanged(user => {
+    const cancelSubscription = auth.onAuthStateChanged(user => {
       if(user) {
         setState(prevState => ({
           ...prevState,
@@ -45,12 +45,15 @@ export default function App() {
         }));
       }   
     });
+    return function() {
+      cancelSubscription();
+    }
   }, [state.user]);
 
   async function handleSubmit(e) {
     if(!state.user) return;
     e.preventDefault();
-    const BASE_URL = 'http://localhost:3001/api/places';
+    const BASE_URL = 'https://react-project3.herokuapp.com/api/places';
     if(!state.editMode) {
 
       const places = await fetch(BASE_URL, {

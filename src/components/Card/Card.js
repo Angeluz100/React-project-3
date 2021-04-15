@@ -1,7 +1,7 @@
 const Card = (props) => {
   async function handleDelete(placeId) {
     if (!props.state.user) return;
-    const URL = `http://localhost:3001/api/places/${placeId}`;
+    const URL = `https://react-project3.herokuapp.com/api/places/${placeId}`;
     const places = await fetch(URL, {
       method: "DELETE",
     }).then((res) => res.json());
@@ -30,7 +30,6 @@ const Card = (props) => {
         <div>
         <div className="place">{s.place}:</div>
         <div className="comments">{s.comments}</div>
-        {/* <div className="picture"><img src={s.picture} alt="places"/></div> */}
         </div>
         <div>
         {!props.state.editMode && (
