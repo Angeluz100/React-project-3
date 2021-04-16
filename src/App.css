@@ -53,7 +53,7 @@ header > ul img {
   width: 15%;
   height: 20vh;
   border-radius: 3%;
-  /* background-color: powderblue; */
+  background-color: powderblue;
   margin: 1em;
 }
 .card article {
